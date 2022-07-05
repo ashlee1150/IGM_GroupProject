@@ -25,11 +25,9 @@ public class PlatformerController : MonoBehaviour
     {
         //Sets our variable 'rb' to the Rigidbody2D component on the game object where this script is attached.
         rb = GetComponent<Rigidbody2D>();
-       // anim = GetComponent<Animator>();
+       
         sounds = GetComponents<AudioSource>();
-        jumpsound = sounds[0];
-        coinsound = sounds[1];
-        Unlock = sounds[2];
+        
     }
 
     // Update is called once per frame
