@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Bar_Script : MonoBehaviour
 {
@@ -51,7 +52,7 @@ public class Bar_Script : MonoBehaviour
             damage_t = 0;
             if (success_currhp == 100)
             {
-                Debug.Log("end of minigame");
+                SceneManager.LoadScene("GameOver");
             }
             
         }
