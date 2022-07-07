@@ -13,6 +13,9 @@ public class PlatformerController : MonoBehaviour
     public AudioSource coinsound;
     public AudioSource Unlock;
 
+    private bool isJumping;
+    private Animator anim;
+
 
     //Assigning a variable where we'll store the Rigidbody2D component.
     private Rigidbody2D rb;
@@ -24,6 +27,7 @@ public class PlatformerController : MonoBehaviour
     void Start()
     {
         //Sets our variable 'rb' to the Rigidbody2D component on the game object where this script is attached.
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
        
         sounds = GetComponents<AudioSource>();
@@ -38,7 +42,7 @@ public class PlatformerController : MonoBehaviour
         //If we're able to jump and the player has pressed the space bar, then we jump!
         if (Input.GetKeyDown(KeyCode.Space) && canJump == true)
         {
-            //anim.SetBool("walking", false);
+            anim.SetBool("isJumping", true);
             rb.velocity = Vector2.up * jumpHeight;
             jumpsound.Play();
         }
@@ -51,19 +55,20 @@ public class PlatformerController : MonoBehaviour
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
             rb.velocity = new Vector2(-speed, rb.velocity.y);
-            //anim.SetBool("walking", true);
+            anim.SetBool("isJumping", false);
             //anim.Set
         }
 
         else if (Input.GetKey(KeyCode.RightArrow))
         {
-            //anim.SetBool("walking", true);
+            anim.SetBool("isJumping", false);
             rb.velocity = new Vector2(+speed, rb.velocity.y);
         }
         //ELSE if we're not pressing an arrow key, our velocity is 0 along the X axis, and whatever the Y velocity is (determined by jump)
         else
         {
             rb.velocity = new Vector2(0, rb.velocity.y);
+            anim.SetBool("isJumping", false);
         }
     }
 
