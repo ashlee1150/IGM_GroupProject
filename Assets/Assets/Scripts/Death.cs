@@ -21,6 +21,11 @@ public class Death : MonoBehaviour
 
     public void loaddeath()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("MiniGame");
+    }
+
+    public void minigame()
+    {
+        SceneManager.LoadScene("Choose_MiniGame");
     }
 }

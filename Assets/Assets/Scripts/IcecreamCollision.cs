@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class IcecreamCollision : MonoBehaviour
 {
+    public GameObject FireworksAll;
+
     public Sprite icecreamCollPath;
     public Sprite truckCollPath;
     // Start is called before the first frame update
@@ -35,6 +37,8 @@ public class IcecreamCollision : MonoBehaviour
             Debug.Log("Woah that hurt");
             //GameObject.Find("Score").GetComponent<Score>().healthCounter -= 1;
             Destroy(this.gameObject);
+            GameObject firework = Instantiate(FireworksAll, GameObject.FindGameObjectWithTag("enemy").transform.position, Quaternion.identity);
+            firework.GetComponent<ParticleSystem>().Play();
             //gameObject.GetComponent<SpriteRenderer>().sprite = truckCollPath;
             //gameObject.GetComponent<CustomerMovement>().canMove = false;
             //gameObject.GetComponent<Rigidbody2D>().

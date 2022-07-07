@@ -52,7 +52,7 @@ public class Bar_Script : MonoBehaviour
             damage_t = 0;
             if (success_currhp == 100)
             {
-                SceneManager.LoadScene("GameOver");
+                SceneManager.LoadScene("Success_MG");
             }
             
         }
