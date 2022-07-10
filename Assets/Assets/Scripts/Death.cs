@@ -28,4 +28,8 @@ public class Death : MonoBehaviour
     {
         SceneManager.LoadScene("Choose_MiniGame");
     }
+    public void ending()
+    {
+        SceneManager.LoadScene("ENDING");
+    }
 }
