@@ -19,14 +19,30 @@ public class Death : MonoBehaviour
     }
 
 
-    public void loaddeath()
+    public void Bat()
     {
         SceneManager.LoadScene("MiniGame");
     }
 
+    public void zombie()
+    {
+        SceneManager.LoadScene("Minigame_Zombie");
+    }
+    public void ghost()
+    {
+        SceneManager.LoadScene("GameGhost");
+    }
     public void minigame()
     {
         SceneManager.LoadScene("Choose_MiniGame");
+    }
+    public void minigame2()
+    {
+        SceneManager.LoadScene("Choose_MiniGame2");
+    }
+    public void minigame3()
+    {
+        SceneManager.LoadScene("Choose_MiniGame3");
     }
     public void ending()
     {

@@ -6,21 +6,45 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Assets/Scenes/Start_instruc.unity
+    path: Assets/Assets/Scenes/Instructions/Start_instruc.unity
     guid: bb9bedf478c31ad48806a7550dc7abaa
   - enabled: 1
-    path: Assets/Assets/Scenes/Choose_MiniGame.unity
+    path: Assets/Assets/Scenes/Corridor1_Vampire/Choose_MiniGame.unity
     guid: f0f66ee471a830042ab713f0bef42b22
   - enabled: 1
-    path: Assets/Assets/Scenes/MainInstruct.unity
+    path: Assets/Assets/Scenes/Instructions/MainInstruct.unity
     guid: 23643e45d823d2a44918a87c774de212
   - enabled: 1
-    path: Assets/Assets/Scenes/MiniGame.unity
+    path: Assets/Assets/Scenes/Corridor1_Vampire/MiniGame.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Assets/Scenes/Success_MG.unity
+    path: Assets/Assets/Scenes/Corridor_3_Ghost/Success_Ghost.unity
     guid: a02b73df3c93f3a48a401e702c009d42
   - enabled: 1
-    path: Assets/Assets/Scenes/GameOver.unity
+    path: Assets/Assets/Scenes/Corridor1_Vampire/GameOver.unity
     guid: cbdfea0e83ad8b1459c7140fff563fc7
+  - enabled: 1
+    path: Assets/Assets/Scenes/Corridor2_Zombie/Minigame_Zombie.unity
+    guid: cb692e02b4791ee4081bc5deab3ad6b9
+  - enabled: 1
+    path: Assets/Assets/Scenes/Corridor_3_Ghost/Choose_MiniGame3.unity
+    guid: fac79271e312f36448c12260d7cd3af2
+  - enabled: 1
+    path: Assets/Assets/Scenes/Corridor2_Zombie/GameOver_Zombie.unity
+    guid: f5fdfca9295b2d340b25399242ec9b80
+  - enabled: 1
+    path: Assets/Assets/Scenes/Corridor_3_Ghost/GameGhost.unity
+    guid: ac9d50efe834bd845a87ddc73b9c13e9
+  - enabled: 1
+    path: Assets/Assets/Scenes/ENDING.unity
+    guid: ae2b2e054f1603342970f8cb67caec4d
+  - enabled: 1
+    path: Assets/Assets/Scenes/Corridor1_Vampire/Success_MG.unity
+    guid: 232e0e75e6320f142a44baf11e44845d
+  - enabled: 1
+    path: Assets/Assets/Scenes/Corridor2_Zombie/Choose_MiniGame2.unity
+    guid: c280dda77aa532045938a3c290bd5bee
+  - enabled: 1
+    path: Assets/Assets/Scenes/Corridor2_Zombie/Success_zombie.unity
+    guid: 0cc9e169b175cfc4684633570c29a5ce
   m_configObjects: {}
