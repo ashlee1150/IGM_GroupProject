@@ -5,13 +5,15 @@ using UnityEngine.SceneManagement;
 
 
 public class Score_zombie : MonoBehaviour {
-	private float minhp = 0, success_currhp, success_currhpSlow, happiness_currhp, happiness_currhpSlow;
-	private float maxhp = 100;
+	public float minhp = 0, success_currhp, success_currhpSlow, happiness_currhp, happiness_currhpSlow;
+	public float maxhp = 100;
 	public float increase = 10;
 	public float damage = 10;
 	public Image success_barfast, success_barslow, barfast, barslow;
 	public Text scoreText;
 	public int ballValue;
+	public GameObject bomb;
+	private Explode explodeScripts;
 
 	private int score;
 
@@ -22,10 +24,11 @@ public class Score_zombie : MonoBehaviour {
 		happiness_currhp = maxhp;
 		happiness_currhpSlow = maxhp;
 		score = 0;
+		explodeScripts = bomb.GetComponent<Explode>();
 		UpdateScore ();
 	}
-	float success_t = 0;
-	float damage_t = 0;
+	public float success_t = 0;
+	public float damage_t = 0;
 
     void Update()
     {
@@ -43,6 +46,7 @@ public class Score_zombie : MonoBehaviour {
 		}
 		barfast.fillAmount = happiness_currhp / maxhp;
 		barslow.fillAmount = happiness_currhpSlow / maxhp;
+		
 	}
     void OnTriggerEnter2D () {
 		score += ballValue;
@@ -54,9 +58,11 @@ public class Score_zombie : MonoBehaviour {
 		{
 			SceneManager.LoadScene("Success_zombie");
 		}
+		
 		UpdateScore ();
 	}
 
+	
 	
 
 	void UpdateScore () {

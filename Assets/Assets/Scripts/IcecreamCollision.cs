@@ -5,9 +5,10 @@ using UnityEngine;
 public class IcecreamCollision : MonoBehaviour
 {
     public GameObject FireworksAll;
-
+    //public AudioSource collisionSound;
     public Sprite icecreamCollPath;
     public Sprite truckCollPath;
+    bool Play;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,11 +36,14 @@ public class IcecreamCollision : MonoBehaviour
         else if (collision.gameObject.tag == "truck") //music for collision will be placed here
         {
             Debug.Log("Place music on collision!");
-            //GameObject.Find("Score").GetComponent<Score>().healthCounter -= 1;
-            Destroy(this.gameObject);
-            GameObject firework = Instantiate(FireworksAll, GameObject.FindGameObjectWithTag("enemy").transform.position, Quaternion.identity);
-            firework.GetComponent<ParticleSystem>().Play();
             
+            
+            {
+                //GameObject.Find("Score").GetComponent<Score>().healthCounter -= 1;
+                Destroy(this.gameObject);
+                GameObject firework = Instantiate(FireworksAll, GameObject.FindGameObjectWithTag("enemy").transform.position, Quaternion.identity);
+                firework.GetComponent<ParticleSystem>().Play();
+            }
         }
     }
 }

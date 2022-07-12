@@ -23,7 +23,7 @@ public class Death : MonoBehaviour
     {
         SceneManager.LoadScene("MiniGame");
     }
-
+    
     public void zombie()
     {
         SceneManager.LoadScene("Minigame_Zombie");
