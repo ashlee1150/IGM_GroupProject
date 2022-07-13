@@ -9,7 +9,7 @@ public class Load_Ghost : MonoBehaviour
     public void OnMouseDown()
     {
 
-        SceneManager.LoadScene("GameGhost");
+        SceneManager.LoadScene("instruc_ghost");
 
     }
 }

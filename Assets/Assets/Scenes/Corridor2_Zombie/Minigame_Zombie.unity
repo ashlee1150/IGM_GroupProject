@@ -1635,7 +1635,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.414, y: 14.999573}
+  m_AnchoredPosition: {x: 56.414, y: 46}
   m_SizeDelta: {x: 259.5218, y: 143}
   m_Pivot: {x: 0.71737534, y: 1.0000001}
 --- !u!114 &1592472548
@@ -1660,10 +1660,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 0ac3335e945442840bead08b8fd94f89, type: 3}
-    m_FontSize: 14
+    m_FontSize: 16
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -1672,7 +1672,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Move your cursor and catch as many human brains possible. Avoid the kittens!
-    Their love explodes you.
+    Their love explodes you. Fill up the success bar to win!
 --- !u!222 &1592472549
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2248,6 +2248,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 467ccfafe6296154cac65078084407ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minhp: 0
+  success_currhp: 0
+  success_currhpSlow: 0
+  happiness_currhp: 0
+  happiness_currhpSlow: 0
+  maxhp: 100
   increase: 5
   damage: 5
   success_barfast: {fileID: 2002598995}
@@ -2256,6 +2262,9 @@ MonoBehaviour:
   barslow: {fileID: 173910609}
   scoreText: {fileID: 2134431020}
   ballValue: 10
+  bomb: {fileID: 194204, guid: 7c79b344622142441817c721e7b366d0, type: 3}
+  success_t: 0
+  damage_t: 0
 --- !u!1 &2031557121
 GameObject:
   m_ObjectHideFlags: 0

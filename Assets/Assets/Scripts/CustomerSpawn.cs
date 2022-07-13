@@ -5,27 +5,27 @@ using UnityEngine;
 public class CustomerSpawn : MonoBehaviour
 {
     public GameObject customerPrefab;
-    //public GameObject customerPrefab2;
-    //public GameObject obstaclePrefab;
+    
     private float xPos=9f;
     private float yPos;
     int randomNumber;
     int randomCust;
     int randomObs;
+    private bool play;
     Vector2 randomPos;
     //public bool obstacleSpawn;
     private float lastYPos=0.0f;
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("GenerateCustomer", 1.0f, 0.8f);
-    }
+        
+            InvokeRepeating("GenerateCustomer", 1.0f, 0.8f);
 
-    // Update is called once per frame
-    void Update()
-    {
         
     }
+    // Update is called once per frame
+    
+    
     void GenerateCustomer()
     {
         randomNumber = Random.Range(0, 2);

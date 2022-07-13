@@ -10,9 +10,12 @@ public class Load_minigame : MonoBehaviour
     
     public void OnMouseDown()
     {
+
         
-       SceneManager.LoadScene("MiniGame");
         
+            SceneManager.LoadScene("minigame_instructions");
+        
+
     }
 
 }
