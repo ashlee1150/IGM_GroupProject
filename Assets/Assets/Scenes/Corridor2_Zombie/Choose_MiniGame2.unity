@@ -1737,14 +1737,14 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Walk through the corridor and click on the door without the yellow tape
-    to start your minigame!
+  m_Text: Walk through the corridor using keys and click on the door without the
+    yellow tape to start your minigame!
 --- !u!222 &572863826
 CanvasRenderer:
   m_ObjectHideFlags: 0
